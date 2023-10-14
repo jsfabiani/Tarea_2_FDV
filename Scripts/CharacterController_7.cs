@@ -31,7 +31,7 @@ public class CharacterController_7 : MonoBehaviour
         translationXAxis *= Time.deltaTime;
         translationZAxis *= Time.deltaTime;
 
-        this.transform.Translate(translationXAxis * speed, 0, translationZAxis * speed);
+        this.transform.Translate(translationXAxis * speed, 0, translationZAxis * speed, Space.World);
 
     }
 }
