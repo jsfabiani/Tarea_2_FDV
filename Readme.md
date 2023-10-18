@@ -17,14 +17,14 @@ Crear un script que mueva el objeto hacia un punto fijo que se marque como objet
 = Si lo ejecutamos en este momento, como la orientación del personaje va a cambiar, el translate no va a funcionar correctamente porque los ejes del personaje y el mundo no están alineados. El movimiento se debe hacer de forma relativa al sistema de referencia del mundo.
  this.transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World).
 5. Añadir Debug.DrawRay(this.transform.position,direction,Color.red) para depuración para comprobar que la dirección está correctamente calculada.
-(gif 1)
+![](https://github.com/jsfabiani/Tarea_2_FDV/blob/main/FDV_tarea_2.5.gif)
 6. Crear un script que haga que el personaje siga al cubo. El cubo debe ser movido usando las teclas de flechas usando controlador de Starter Assets.
 7. Sobre la escena que has trabajado ubica un cubo que represente un personaje que vas a mover. Se debe implementar un script que haga de CharacterController. Cuando el jugador pulse las teclas de flecha (o aswd) el jugador se moverá en la dirección que estos ejes indican.
 - Crear un script para el personaje que lo desplace por la pantalla, sin aplicar simulación física.
 - Agregar un campo público que permita graduar la velocidad del movimiento desde el inspector de objetos.
 - Utilizar la tecla de espaciado para incrementar la velocidad del desplazamiento en el tiempo de juego.
-(gif 2)
+![](https://github.com/jsfabiani/Tarea_2_FDV/blob/main/FDV_tarea_2.7.gif)
 8. Sobre la escena que has trabajado programa los scripts necesarios para las siguientes acciones:
 - Se deben incluir varios cilindros sobre la escena. Cada vez que el objeto jugador colisione con alguno de ellos, se debe mostrar en la consola un mensaje indicando el nombre del cilindro con el que colisiona, cambiar a color rojo y el jugador aumentar la puntuación.
-(gif 3)
+![](https://github.com/jsfabiani/Tarea_2_FDV/blob/main/FDV_tarea_2.8.gif)
 
